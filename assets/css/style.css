@@ -986,156 +986,6 @@ p.web-devopler {
 	}
 }
 
-
-@media (max-width: 767px) {
-
-	.navmenu ul {
-		flex-direction: column;
-		background: #000000;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		z-index: 1000;
-		padding: 0;
-		max-height: 0;
-		opacity: 0;
-		overflow: hidden;
-		transform: translateY(-8px);
-		transition:
-			max-height 0.5s ease,
-			opacity 0.4s ease,
-			transform 0.4s ease,
-			padding 0.4s ease;
-	}
-
-	.navmenu.active ul {
-		display: flex;
-		max-height: 500px;
-		opacity: 1;
-		transform: translateY(0);
-		padding: 10px 0;
-	}
-
-	.header .btn-talks {
-		display: none;
-	}
-
-	.nav-list li {
-		padding: 12px 5px 12px 20px;
-	}
-
-	.mobile-nav-toggle {
-		font-size: 26px;
-		color: #fff;
-		cursor: pointer;
-		z-index: 1001;
-	}
-
-	.header {
-		margin: 0px 7px;
-	}
-
-	.light-circle {
-		DISPLAY: NONE;
-	}
-
-	.hero-section::before {
-		width: 300px;
-		height: 60px;
-		left: 120px;
-		top: -20px;
-	}
-
-	.hero-section::after {
-		width: 350px;
-		height: 50px;
-		left: 120px;
-		top: -25px;
-	}
-
-	i#menuToggleIcon {
-		padding-right: 28px;
-	}
-
-	.about-section,
-	.contact,
-	.work {
-		padding: 40px 10px;
-	}
-
-	.hero-section .content h1 {
-		font-size: 30px;
-	}
-
-	.about-section h2 {
-		font-size: 48px;
-		padding: 10px 0 20px 0;
-	}
-
-	.about-img {
-		margin-top: 70px;
-	}
-
-	.work-box a img {
-		width: 100%;
-		height: 239px;
-	}
-
-	.contact .contact-info h2,
-	.work .work-info h2 {
-		font-size: 48px;
-	}
-
-	.contact .contact-form h1 {
-		font-size: 26px;
-	}
-
-	.contact .contact-form .contact-box {
-		padding: 55px 20px 30px 20px;
-	}
-
-	.content-btn {
-		gap: 0rem;
-	}
-
-	a.resume-btn {
-		margin-left: 10px;
-	}
-
-	.resume .resume-btn {
-		padding: 10px 20px;
-	}
-
-	.gx-row.d-flex {
-		flex-direction: column;
-	}
-
-	.credential-area .credential-sidebar {
-		width: 100%;
-	}
-
-
-	.rocket-lines {
-		display: none;
-	}
-
-
-	.rocket-fade {
-		display: none;
-	}
-
-	.unique-card {
-		display: none;
-	}
-
-	.footer-area {
-		padding-top: 0px;
-	}
-
-
-}
-
 @media (min-width: 768px) and (max-width: 1199px) {
 	.navmenu ul {
 		flex-direction: column;
@@ -1227,6 +1077,7 @@ p.web-devopler {
 
 	.about-img {
 		margin-top: 70px;
+		width: auto;
 	}
 
 	.unique-card {
@@ -1241,4 +1092,159 @@ p.web-devopler {
 	.footer-area {
 		padding-top: 68px;
 	}
+}
+
+
+@media (max-width: 767px) {
+
+	.navmenu ul {
+		flex-direction: column;
+		background: #000000;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		padding: 0;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transform: translateY(-8px);
+		transition:
+			max-height 0.5s ease,
+			opacity 0.4s ease,
+			transform 0.4s ease,
+			padding 0.4s ease;
+	}
+
+	.navmenu.active ul {
+		display: flex;
+		max-height: 500px;
+		opacity: 1;
+		transform: translateY(0);
+		padding: 10px 0;
+	}
+
+	.header .btn-talks {
+		display: none;
+	}
+
+	.nav-list li {
+		padding: 12px 5px 12px 20px;
+	}
+
+	.mobile-nav-toggle {
+		font-size: 26px;
+		color: #fff;
+		cursor: pointer;
+		z-index: 1001;
+	}
+
+	.header {
+		margin: 0px 7px;
+	}
+
+	.row.align-items-center {
+		padding-top: 56px;
+	}
+
+	.light-circle {
+		display: none;
+	}
+
+	.hero-section::before {
+		width: 300px;
+		height: 60px;
+		left: 120px;
+		top: -20px;
+	}
+
+	.hero-section::after {
+		width: 350px;
+		height: 50px;
+		left: 120px;
+		top: -25px;
+	}
+
+	i#menuToggleIcon {
+		padding-right: 28px;
+	}
+
+	.about-section,
+	.contact,
+	.work {
+		padding: 40px 10px;
+	}
+
+	.hero-section .content h1 {
+		font-size: 30px;
+	}
+
+	.about-section h2 {
+		font-size: 48px;
+		padding: 10px 0 20px 0;
+	}
+
+	.about-img {
+		margin-top: 70px;
+		width: auto;
+	}
+
+	.work-box a img {
+		width: 100%;
+		height: 239px;
+	}
+
+	.contact .contact-info h2,
+	.work .work-info h2 {
+		font-size: 48px;
+	}
+
+	.contact .contact-form h1 {
+		font-size: 26px;
+	}
+
+	.contact .contact-form .contact-box {
+		padding: 55px 20px 30px 20px;
+	}
+
+	.content-btn {
+		gap: 0rem;
+	}
+
+	a.resume-btn {
+		margin-left: 10px;
+	}
+
+	.resume .resume-btn {
+		padding: 10px 20px;
+	}
+
+	.gx-row.d-flex {
+		flex-direction: column;
+	}
+
+	.credential-area .credential-sidebar {
+		width: 100%;
+	}
+
+
+	.rocket-lines {
+		display: none;
+	}
+
+
+	.rocket-fade {
+		display: none;
+	}
+
+	.unique-card {
+		display: none;
+	}
+
+	.footer-area {
+		padding-top: 0px;
+	}
+
+
 }
