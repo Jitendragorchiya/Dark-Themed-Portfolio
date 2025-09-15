@@ -35,24 +35,4 @@ jQuery(document).ready(function () {
          }
       });
    });
-
-
-   jQuery('a').on('click', function (e) {
-      var href = jQuery(this).attr('href');
-
-
-      if (href.startsWith('#')) {
-         e.preventDefault();
-
-         if (jQuery(href).length) {
-            jQuery('html, body').animate({
-               scrollTop: jQuery(href).offset().top
-            }, 800);
-
-
-            history.pushState(null, '', '/');
-         }
-      }
-
-   });
 });
