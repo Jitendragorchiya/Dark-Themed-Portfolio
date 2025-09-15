@@ -40,6 +40,7 @@ jQuery(document).ready(function () {
    jQuery('a').on('click', function (e) {
       var href = jQuery(this).attr('href');
 
+
       if (href.startsWith('#')) {
          e.preventDefault();
 
@@ -47,10 +48,11 @@ jQuery(document).ready(function () {
             jQuery('html, body').animate({
                scrollTop: jQuery(href).offset().top
             }, 800);
-         }
 
-         var pageName = href.replace('#', '');
-         history.pushState(null, '', '/' + pageName);
+
+            history.pushState(null, '', '/');
+         }
       }
+
    });
 });
