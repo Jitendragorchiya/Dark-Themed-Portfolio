@@ -728,7 +728,7 @@ section.credential-area {
 }
 
 .alert-success {
-	color: #fff;
+	color: rgb(12, 166, 12);
 	font-weight: 600;
 	background-color: #0000;
 	border: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.7), transparent 70%);
@@ -940,7 +940,7 @@ p.web-devopler {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 44px;
+	gap: 36px;
 	flex-wrap: wrap;
 }
 
@@ -1018,6 +1018,10 @@ p.web-devopler {
 	.header .btn-talks {
 		display: none;
 	}
+
+	.header .logo img {
+        max-width: 54px;
+    }
 
 	.row.align-items-center {
 		padding: 110px 0;
@@ -1143,6 +1147,10 @@ p.web-devopler {
 	.header {
 		margin: 0px 7px;
 	}
+
+	.header .logo img {
+        max-width: 54px;
+    }
 
 	.row.align-items-center {
 		padding-top: 56px;
